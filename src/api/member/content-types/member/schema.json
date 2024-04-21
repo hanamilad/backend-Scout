@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Data": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "attendance": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::attendance.attendance",
+      "inversedBy": "members"
+    }
+  }
+}

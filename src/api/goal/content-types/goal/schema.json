@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goals",
+  "info": {
+    "singularName": "goal",
+    "pluralName": "goals",
+    "displayName": "Goal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "checked": {
+      "type": "boolean"
+    },
+    "Namesubject": {
+      "type": "string"
+    }
+  }
+}
